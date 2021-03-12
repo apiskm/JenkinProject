@@ -15,12 +15,5 @@ pipeline {
 				bat """ java MyDate"""
 				}
 			}
-			
-		stage ("docker") {
-			steps {
-				echo "Running Docker"
-				bat """ docker run mydate-img """
-				}
-			}
 		}
 	}
